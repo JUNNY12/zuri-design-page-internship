@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+    
+
+body{
+    background: hsl(0, 100%, 74%) ;
+    background-image: url("image/bg-intro-desktop.png");
+    font-family: 'Poppins', sans-serif;
+}
+
+.mainContainer{
+    display: grid;
+    height: 100vh;
+    padding: 5% 8% 0 8% ;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+    color: #ffffff;
+}
+
+
+
+#header{
+font-size: clamp(1.5rem, 2.5vh,3.5rem);
+margin-bottom: 1rem;
+}
+
+.paragraph{
+    font-size: 16px;
+}
+
+.topHeader{
+    background: hsl(248, 32%, 49%);
+    padding: 1rem;
+    border-radius: 8px;
+    color: #ffffff;
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+    box-shadow: 1px 1px 1px 0px hsl(246, 25%, 77%);
+}
+
+.topHeader .span2{
+    color:hsl(246, 25%, 77%);
+}
+
+.topHeader .span1{
+    font-weight: 600;
+}
+
+.formContainer{
+    background: #ffffff;
+    border-radius:8px ;
+    padding: 7%;
+    margin-bottom: 3rem;
+}
+
+.input{
+    outline: none;
+    border: 1px solid hsl(246, 25%, 77%);
+    margin-bottom: 1.7rem;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.input:focus{
+    border: 1px solid hsl(249, 10%, 26%) ;
+}
+
+.button{
+    background: hsl(154, 59%, 51%);
+    border: none;
+    outline: none;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px hsl(246, 25%, 77%);
+}
+
+.terms{
+    color:hsl(0, 100%, 74%);
+    font-weight: 700; 
+}
+.info-terms{
+    color: hsl(246, 25%, 77%);
+}
+
+.formFooter{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.errorMessage{
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+    font-style: italic;
+    position: absolute;
+    right: 0;
+    bottom: 5%;
+    font-size: 12px;
+}
+
+.errorEmail{
+    color: hsl(0, 100%, 74%);
+    position: absolute;
+    font-weight: bolder;
+    top: 15%;
+    left: 5%;
+    font-size: 10px;
+}
+
+.hide{
+    display: none;
+}
+
+.iconError{
+    position: absolute;
+    z-index: 1;
+    top: 15%;
+    right: 5%;
+}
+
+.hideError{
+    display: none;
+}
+
+.showError{
+    display: block;
+}
+
+.inputWrapper{
+    position: relative;
+}
+
+@media screen and (max-width:768px) {
+    body{
+        background-image: url('image/bg-intro-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .mainContainer{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .paragraph{
+        text-align: center;
+        margin-bottom: 3.5rem;
+    }
+
+    #header{
+        text-align: center;
+    }
+}

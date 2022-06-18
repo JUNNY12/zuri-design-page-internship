@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <title>Registration Form</title>
+</head>
+<body>
+    <main class="mainContainer">
+        <section class="section1">
+            <h1 id="header">Learn to code by Watching Others</h1>
+
+            <p class="paragraph">
+                See how experience developers solve problem in real time. 
+                Watching scripted tutorials is great, but understanding how developer
+                thinks is invaluable
+         </p>
+        </section>
+        <section>
+            <div class="topHeader">
+                <span class="span1">Try it free 7days</span>
+                <span class="span2"> then $20/mo thereafter.</span>
+            </div>
+
+            <div class="formContainer">
+                <form action="">
+                    <div class="inputWrapper">
+                        <input type="text" class="input" id="firstName" placeholder="First Name"><br>
+                        <div class="errorMessage hideError">First Name cannot be empty</div>
+                        <div class="iconError hideError"><img src="./image/icon-error.svg" alt="error"></div>
+                    </div>
+                    <div class="inputWrapper">
+                        <input type="text" class="input" id="lastName" placeholder="Last Name"><br>
+                        <div class="errorMessage hideError">Last Name cannot be empty</div>
+                        <div class="iconError hideError"><img src="./image/icon-error.svg" alt="error"></div>
+                    </div>
+
+                    <div class="inputWrapper">
+                       <input type="text" class="input" id="email" placeholder="Email Address"><br>
+                       <div class="errorMessage hideError">Looks like this is not an email</div>
+                       <div class="errorEmail hideError">email@example.com</div>
+                       <div class="iconError hideError"><img src="./image/icon-error.svg" alt="error"></div>
+                    </div>
+
+                    <div class="inputWrapper">
+                        <input type="password" class="input" id="password" placeholder="Password"><br>
+                        <div class="errorMessage hideError">Password cannot be empty</div>
+                        <div class="iconError hideError"><img src="./image/icon-error.svg" alt="error"></div>
+                    </div>
+
+                    <button class="button">CLAIM YOUR FREE TRIAL</button>
+                </form>
+
+                <div class="formFooter">
+                    <span class="info-terms">By clicking the button, you are agreeing to our</span>
+                    <span class="terms">Terms and Services</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./Script.js">
+
+    </script>
+</body>
+</html>
